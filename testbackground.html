@@ -1,0 +1,103 @@
+
+<!doctype html>
+<<html>
+<head>
+	<title>The Little Things</title>
+ <script type="text/javascript">
+    function evalSlider()
+{
+  var sliderValue = document.getElementById('rating').value;
+  document.getElementById('sliderVal').innerHTML = sliderValue;
+}
+  </script>
+
+	<link rel="stylesheet" href="textbackground.css">
+</head>
+<body>
+	<img class="logo" src="logo.png"></img>
+
+<div class="filters">
+
+<form class="slider" action="#" method="post">
+  How much pocket change you got?
+  <input type="range" name="" id="rating" min="0" max="50" step="1" onchange="evalSlider()"/>
+  <output id="sliderVal"></output>
+</form>
+
+	<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Cuisine</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#african">African</a>
+    <a href="#chinese">Chinese</a>
+    <a href="#indian">Indian</a>
+    <a href="#mexican">Mexican</a>
+    <a href="#thai">Thai</a>
+    <a href="#vietnamese">Vietnamese</a>
+  </div>
+</div>
+
+<div class = "dropdown">
+<button onclick = "myFunction2()" class="dropbtn">Dietary Restrictions</button>
+  <div id="myDropdown2" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction2()">
+    <a href="#vegan">Vegan</a>
+    <a href="#vegetarian">Vegetarian</a>
+    <a href="#gluten free">Gluten Free</a>
+    <a href="#pescatarian">Pescatarian</a>
+    <a href="#none">None</a>
+  </div>
+</div>
+
+
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+function filterFunction2() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput2");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown2");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+
+</body>
+</html>
+
+
+
