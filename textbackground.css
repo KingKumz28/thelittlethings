@@ -22,7 +22,30 @@ body {
 	display: inline-block !important;
 }
 
-.dropbtn {
+.cuisinecontent {
+}
+
+.cuisinemenu {
+
+}
+ /*form select.not_chosen {
+  color: #808080;
+}
+form select.not_chosen + span.arrow {
+  border-color: #808080 transparent transparent transparent;
+}
+form select option {
+	color: #080808;
+}
+form select option:first-child {
+	color: #808080;
+}
+*/
+
+
+
+
+/*.dropbtn {
     background-color: #4da6ff;
     color: white;
     padding: 25px;
@@ -42,14 +65,19 @@ body {
     font-size: 16px;
     padding: 14px 20px 12px 45px;
     border: none;
-}
+}*/
 
-.dropdown {
+.restrictionsmenu {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.cuisinemenu {
+    position: relative;
+    display: inline-block;
+}
+
+/*.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f6f6f6;
@@ -65,7 +93,7 @@ body {
     display: block;
 }
 
-.dropdown a:hover {background-color: #ddd}
+.dropdown a:hover {background-color: #ddd}*/
 
 .show {display:block;}
 
