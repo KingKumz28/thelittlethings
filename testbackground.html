@@ -19,6 +19,7 @@ function evalSlider()
 	<img class="logo" src="logo.png"></img>
 
 <div class="filters">
+	<div class="filters-center">
 
 <form class="slider" action="#" method="post">
   How much pocket change you got?
@@ -29,35 +30,47 @@ function evalSlider()
 
 <div class="cuisinemenu">
 
-<select class="cuisinecontent">
+<select class="cuisinecontent" id = "cuisinename">
   <option value="">Cuisine</option>
-  <option value="AL">Indian</option>
-  <option value="AK">American</option>
-  <option value="AZ">Chinese</option>
-  <option value="AR">Mexican</option>
-  <option value="CA">Italian</option>
+  <option value="China">China</option>
+  <option value="AK">Portugal</option>
+  <option value="AZ">France</option>
+  <option value="AR">Japan</option>
+  <option value="CA">Togo</option>
 </select>
 
 </div>
 
 <div class="restrictionsmenu">
 
-<select class="restrictionsontent">
+<select class="restrictionscontent" id= "restrictionname">
   <option value="">Dietary Restrictions</option>
-  <option value="AL">Vegan</option>
-  <option value="AK">Vegetarian</option>
-  <option value="AZ">Gluten-Free</option>
-  <option value="AR">None</option>
+  <option value="vegan">Vegan</option>
+  <option value="vegetarian">Vegetarian</option>
+  <option value="none">None</option>
 </select>
 
 </div>
 
-<button class="button submitbutton">Submit</button>
+</div>
+</div>
+
+<script src="recipes.js"></script>
+<script src="index.js"></script>
+
+<p id ="demo"></p>
+
+<button class="button submitButton" onclick="getFood()">Submit </button>
+
+<p id ="demo1"></p>
+<p id ="demo2"></p>
+
+
+
 
 
 </div>
 
-</div>
 
 		<!-- <fieldset>
 		

@@ -1,41 +1,41 @@
+function getFood() {
+    ba = new Array();
+    ca = new Array();
+    da = new Array();
+    ea = new Array();
+    var x = document.getElementById('sliderVal').innerHTML;
+    var y = document.getElementById("cuisinename").value;
+    var z = document.getElementById("restrictionname").value;
+
+    //var x = 10;
+    for (var i = 0, size = barray.length; i < size; i++) {
+        var price = barray[i]['price'];
+        if (price <= x) {
+            ba.push(barray[i])
+        }
+    }
+    //var y = "China";
+    for (var i = 0, size = ba.length; i < size; i++) {
+        var country = ba[i]['cuisine'];
+        if (country == y) {
+            ca.push(ba[i])
+        }
+    }
+    //var z = 'vegan';
+    for (var i = 0, size = ca.length; i < size; i++) {
+        if (ca[i][z] == 1) {
+            da.push(ca[i])
+        }
+    };
+    console.log(da);
+    document.getElementById("demo").innerHTML = "The dish you should make is: " + da[0]['Dish'] + "!!!";
+
+       
 
 
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-// }
-
-// function myFunction2() {
-//     document.getElementById("myDropdown2").classList.toggle("show");
-// }
-
-// function filterFunction() {
-//     var input, filter, ul, li, a, i;
-//     input = document.getElementById("myInput");
-//     filter = input.value.toUpperCase();
-//     div = document.getElementById("myDropdown");
-//     a = div.getElementsByTagName("a");
-//     for (i = 0; i < a.length; i++) {
-//         if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-//             a[i].style.display = "";
-//         } else {
-//             a[i].style.display = "none";
-//         }
-//     }
-// }
-
-// function filterFunction2() {
-//     var input, filter, ul, li, a, i;
-//     input = document.getElementById("myInput2");
-//     filter = input.value.toUpperCase();
-//     div = document.getElementById("myDropdown2");
-//     a = div.getElementsByTagName("a");
-//     for (i = 0; i < a.length; i++) {
-//         if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-//             a[i].style.display = "";
-//         } else {
-//             a[i].style.display = "none";
-//         }
-//     }
 
 
-// }
+
+
+
+    }

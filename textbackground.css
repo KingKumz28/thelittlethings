@@ -8,26 +8,41 @@ body {
 }
 
 .logo{
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -150px;
 	display: block;
 }
 
 .filters{
-	display: inline !important;
+	width: 100%;
+	display: inline-block !important;
+	margin-top: -200px;
 
 }
 
+.filters-center {
+	width:50%;
+	margin:auto;
+}
+
 .slider{
+	border-radius: 8px;
+	text-align: center;
+	color: white;
+	background-color: #4da6ff;
+	font-family: "Verdana";
 	width: 33%;
 	display: inline-block !important;
+	padding: 10px 10px;
+	font-size: 16px;
+    margin: 4px 2px;
 }
 
 .cuisinecontent {
 }
 
-.cuisinemenu {
 
-}
  /*form select.not_chosen {
   color: #808080;
 }
@@ -67,29 +82,57 @@ form select option:first-child {
     border: none;
 }*/
 
+.cuisinecontent{
+	margin-top: 53%;
+}
+
 .restrictionsmenu {
-    position: relative;
+	width: 28%;
+	border-radius: 8px;
+	background-color: #4da6ff;
     display: inline-block;
+    margin: 0 auto;
+    height: 85px;
+    padding-left: 40px;
 }
 
 .cuisinemenu {
-    position: relative;
+	background-color: #4da6ff;
+	border-radius: 8px;
+	width: 18%;
+ 	padding-left: 33px;
     display: inline-block;
+    margin: 0 0 0 0;
+    height: 85px;
 }
 
 .button {
-    background-color: #4da6ff; /* Green */
+    background-color: #4da6ff;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+  	width: 114px ;
+  	display: block;
+ 	margin-left: auto ;
+  	margin-right: auto ;
+  	margin-top: 100px;
+  	border-radius: 8px;
 }
 
+.restrictionscontent{
+	margin-top: 34%;
+}
+
+#demo {
+	color:#FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	
+}
 
 .submitbutton {border-radius: 8px;}
 
